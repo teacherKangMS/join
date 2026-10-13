@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026 옥련여고 축제 「연꽃피다」 | 우리가 만들고, 우리가 피워내는 하루</title>
+<style>
+:root{--bg:#F8FBFF;--g1:#9FDBFF;--g2:#FFB8E1;--acc:#FF2E93;--acc2:#D81B7A;--sub:#1EC8FF;--txt:#17121F;--sm:#C8007A;--muted:rgba(23,18,31,.68)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:system-ui,"Malgun Gothic",sans-serif;color:var(--txt);line-height:1.6;background:
+ radial-gradient(900px 600px at 8% 4%,var(--g2),transparent 60%),radial-gradient(900px 700px at 96% 30%,var(--g1),transparent 60%),
+ radial-gradient(800px 600px at 10% 75%,var(--g1),transparent 60%),radial-gradient(700px 500px at 90% 95%,var(--g2),transparent 60%),var(--bg);background-attachment:fixed}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sm);outline-offset:3px;border-radius:8px}
+.glass{background:rgba(255,255,255,.62);border:1px solid rgba(255,255,255,.75);border-radius:28px;position:relative;
+ -webkit-backdrop-filter:blur(30px) saturate(180%);backdrop-filter:blur(30px) saturate(180%);
+ box-shadow:inset 0 1px 0 rgba(255,255,255,.95),0 12px 36px rgba(255,46,147,.12)}
+.glass::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;background:linear-gradient(160deg,rgba(255,255,255,.95),rgba(255,255,255,0) 60%);
+ -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.glass{background:rgba(255,255,255,.94)}}
+.need{display:inline-block;background:rgba(255,46,147,.12);color:var(--sm);font-weight:800;border-radius:999px;padding:0 .55em;font-size:.92em}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+/* nav */
+.nav{position:sticky;top:12px;z-index:50;margin:12px auto 0;max-width:1120px;padding:0 16px}
+.nav .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 12px 10px 22px;border-radius:999px}
+.logo{font-weight:900;letter-spacing:-.02em;text-decoration:none;white-space:nowrap}.logo b{color:var(--acc)}
+.nav ul{display:flex;gap:4px;list-style:none;flex-wrap:wrap}
+.nav ul a{text-decoration:none;font-weight:700;font-size:.95rem;padding:8px 14px;border-radius:999px;display:block}
+.nav ul a:hover{background:rgba(255,46,147,.1);color:var(--sm)}
+.nav ul a.cta{background:linear-gradient(90deg,var(--acc),var(--acc2));color:#fff}
+/* hero */
+.hero{padding:64px 0 40px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center}
+.sticker{display:inline-block;font-weight:800;border-radius:999px;padding:7px 16px;color:#fff;background:var(--acc);font-size:.92rem;transform:rotate(-3deg);box-shadow:0 6px 16px rgba(255,46,147,.25)}
+.sticker.s2{background:var(--sub);transform:rotate(3deg);box-shadow:0 6px 16px rgba(30,200,255,.3)}
+.hero h1{font-size:clamp(2.4rem,5.6vw,4.4rem);line-height:1.1;font-weight:900;letter-spacing:-.04em;margin:18px 0 16px}
+.grad{background:linear-gradient(90deg,var(--acc),var(--sub));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{font-size:1.12rem;color:var(--muted);font-weight:600;max-width:34em}
+.meta{display:flex;flex-wrap:wrap;gap:8px 18px;margin:18px 0 26px;font-weight:700}
+.meta span b{color:var(--sm)}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;text-decoration:none;font-weight:800;border:0;cursor:pointer;font-size:1.05rem;border-radius:999px;padding:15px 28px;color:#fff;background:linear-gradient(90deg,var(--acc),var(--acc2));box-shadow:0 10px 24px rgba(255,46,147,.32);font-family:inherit}
+.btn.ghost{background:rgba(255,255,255,.7);color:var(--sm);box-shadow:inset 0 0 0 1.5px rgba(200,0,122,.35)}
+.hero-art{width:100%;height:auto}
+/* sections */
+section.sec{padding:56px 0}
+.sec-head{margin-bottom:28px}
+.sec-head h2{font-size:clamp(1.8rem,3.6vw,2.6rem);font-weight:900;letter-spacing:-.03em;line-height:1.2;margin-top:12px}
+.sec-head p{color:var(--muted);font-weight:600;margin-top:6px}
+.grid{display:grid;gap:20px}.g4{grid-template-columns:repeat(4,1fr)}.g5{grid-template-columns:repeat(5,1fr)}.g2{grid-template-columns:1.25fr .75fr}
+.card{padding:24px 22px}
+.card h3{font-size:1.1rem;font-weight:800;letter-spacing:-.02em;line-height:1.35;margin:14px 0 8px}
+.card p{color:var(--muted);font-size:.95rem;font-weight:500}
+.tilt0{transform:rotate(-1deg)}.tilt1{transform:rotate(.8deg)}.tilt2{transform:rotate(-.4deg)}
+.badge{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--acc),var(--acc2))}
+.badge svg,.mini svg{width:28px;height:28px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.chip{display:inline-block;margin-top:14px;font-size:.85rem;font-weight:800;border-radius:999px;padding:4px 12px;background:rgba(255,46,147,.12);color:var(--sm)}
+.chip.c2{background:rgba(30,200,255,.16);color:#0A6A8A}
+/* timeline */
+.timeline{padding:28px 28px 22px}
+.timeline h3,.side h3{font-size:1.15rem;font-weight:800;margin-bottom:16px}
+.tl{list-style:none;position:relative;padding-left:6px}
+.tl::before{content:"";position:absolute;left:15px;top:8px;bottom:8px;width:4px;border-radius:4px;background:linear-gradient(var(--acc),var(--sub))}
+.tl li{display:flex;align-items:center;gap:16px;padding:7px 0;position:relative}
+.tl .dot{width:22px;height:22px;flex:none;border-radius:50%;background:#fff;border:4px solid var(--sub);z-index:1}
+.tl li.hot .dot{border-color:var(--acc);background:var(--acc)}
+.tl time{font-weight:900;min-width:58px;color:var(--sm)}
+.tl li.hot span:last-child{font-weight:800}
+.side{padding:26px}
+.steps{list-style:none;display:grid;gap:10px}
+.steps li{display:flex;gap:12px;align-items:center;font-weight:700}
+.steps b{display:inline-grid;place-items:center;min-width:64px;padding:6px 0;border-radius:999px;background:var(--sub);color:#05202B;font-weight:900}
+/* awards */
+.awards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:24px}
+.aw{padding:22px;text-align:left}
+.aw .num{font-size:2.3rem;font-weight:900;color:var(--acc);letter-spacing:-.03em;line-height:1.1}
+.aw .num small{font-size:1rem;color:var(--txt)}
+.aw p{font-weight:700;margin-top:6px}.aw span{color:var(--muted);font-size:.9rem}
+/* faq */
+.faq{display:grid;gap:12px;max-width:860px}
+.faq-item{border-radius:24px}
+.faq-item button{width:100%;text-align:left;background:none;border:0;font:inherit;font-weight:800;font-size:1.05rem;padding:20px 56px 20px 24px;cursor:pointer;color:var(--txt);position:relative;border-radius:24px}
+.pm{position:absolute;right:22px;top:50%;width:24px;height:24px;margin-top:-12px;border-radius:50%;background:var(--acc)}
+.pm::before,.pm::after{content:"";position:absolute;left:6px;right:6px;top:11px;height:2px;background:#fff;transition:transform .25s}
+.pm::after{transform:rotate(90deg)}
+button[aria-expanded="true"] .pm::after{transform:rotate(0)}
+.faq-a{padding:0 24px 20px}.faq-a p{color:var(--muted);font-weight:500}
+/* form */
+.form{padding:32px;max-width:860px}
+.form .notice{color:var(--muted);font-weight:600;margin-bottom:18px}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.f{display:flex;flex-direction:column;gap:6px}.f.full{grid-column:1/-1}
+.f label{font-weight:800;font-size:.95rem}.f label i{color:var(--sm);font-style:normal}
+.f input,.f select,.f textarea{font:inherit;padding:12px 16px;border-radius:16px;border:1.5px solid rgba(200,0,122,.2);background:rgba(255,255,255,.85);color:var(--txt)}
+.f input:focus-visible,.f select:focus-visible,.f textarea:focus-visible{outline:3px solid var(--sm);outline-offset:1px}
+.form .btn{margin-top:20px}
+.done{margin-top:16px;font-weight:800;color:var(--sm);background:rgba(255,46,147,.1);border-radius:16px;padding:14px 18px}
+footer.foot{padding:40px 0 56px}
+footer .glass{padding:26px 28px;display:grid;grid-template-columns:repeat(4,auto);gap:10px 28px;font-size:.95rem}
+footer b{color:var(--sm);margin-right:6px}
+/* reveal */
+.reveal{opacity:0;translate:0 24px;transition:opacity .7s ease,translate .7s ease}
+.reveal.in{opacity:1;translate:0 0}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;translate:none;transition:none}.pm::before,.pm::after{transition:none}}
+@media (max-width:980px){.g5{grid-template-columns:repeat(3,1fr)}.g4,.awards{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:768px){
+ .hero .wrap,.g2,.g4,.g5,.awards,.fields{grid-template-columns:1fr}
+ .nav ul a:not(.cta){display:none}
+ footer .glass{grid-template-columns:1fr}
+ .tilt0,.tilt1,.tilt2{transform:none}
+}
+@media print{*{-webkit-print-color-adjust:exact;print-color-adjust:exact}.glass{-webkit-backdrop-filter:none;backdrop-filter:none;background:#fff;box-shadow:none;border:1px solid #eee}.reveal{opacity:1;translate:none}.nav{position:static}}
+</style>
+</head>
+<body>
+<nav class="nav" aria-label="주요 메뉴"><div class="bar glass">
+ <a class="logo" href="#top">옥련여고 <b>연꽃피다</b></a>
+ <ul><li><a href="#about">축제 소개</a></li><li><a href="#program">프로그램</a></li><li><a href="#schedule">일정·시상</a></li><li><a href="#faq">FAQ</a></li><li><a class="cta" href="#apply">참가 신청</a></li></ul>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+ <div>
+  <span class="sticker">2026 옥련여고 축제 「연꽃피다」</span> <span class="need">[가정: 축제명]</span>
+  <h1>우리가 만들고,<br>우리가 <span class="grad">피워내는</span> 하루</h1>
+  <p class="lead">동아리와 학급이 1년 동안 준비한 것을 한자리에서 보여 주는 날이에요.</p>
+  <div class="meta"><span><b>일시</b> <span class="need">[확인 필요]</span></span><span><b>장소</b> 옥련여자고등학교 체육관·교실·운동장·연정갤러리</span></div>
+  <div class="btns"><a class="btn" href="#apply">공연·부스 참가 신청하기</a><a class="btn ghost" href="#schedule">축제 당일 함께하기</a></div>
+ </div>
+ <svg class="hero-art" viewBox="0 0 400 300" aria-hidden="true">
+<defs><linearGradient id="pk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF2E93"/><stop offset="1" stop-color="#FFB8E1"/></linearGradient>
+<linearGradient id="sk" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1EC8FF"/><stop offset="1" stop-color="#9FDBFF"/></linearGradient>
+<radialGradient id="spot"><stop offset="0" stop-color="#fff" stop-opacity=".95"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient></defs>
+<ellipse cx="200" cy="180" rx="170" ry="110" fill="url(#spot)"/>
+<path d="M120 0 L170 240 L230 240 L160 0Z" fill="#9FDBFF" fill-opacity=".3"/><path d="M280 0 L230 240 L170 240 L240 0Z" fill="#FFB8E1" fill-opacity=".35"/>
+<g transform="translate(200 250)">
+<path d="M0 0 C-60 -10 -120 -40 -150 -20 C-120 10 -50 14 0 0Z" fill="#FFB8E1"/><path d="M0 0 C60 -10 120 -40 150 -20 C120 10 50 14 0 0Z" fill="#FFB8E1"/>
+<path d="M0 0 C-40 -30 -90 -90 -100 -110 C-60 -100 -15 -60 0 0Z" fill="url(#pk)" fill-opacity=".9"/><path d="M0 0 C40 -30 90 -90 100 -110 C60 -100 15 -60 0 0Z" fill="url(#pk)" fill-opacity=".9"/>
+<path d="M0 0 C-28 -50 -30 -120 0 -150 C30 -120 28 -50 0 0Z" fill="url(#pk)"/><path d="M0 -6 C-14 -40 -14 -96 0 -118 C14 -96 14 -40 0 -6Z" fill="#fff" fill-opacity=".55"/>
+<ellipse cx="0" cy="8" rx="170" ry="16" fill="url(#sk)" fill-opacity=".55"/></g>
+<path d="M30 80 C70 50 100 110 140 74 S200 50 220 80" stroke="#FF2E93" stroke-width="6" fill="none" stroke-linecap="round"/>
+<path d="M200 50 C240 20 270 80 310 46 S360 30 380 60" stroke="#1EC8FF" stroke-width="6" fill="none" stroke-linecap="round"/>
+<path d="M60 140l5 10.5 11.5 1.6-8.3 8 2 11.4-10.2-5.4-10.2 5.4 2-11.4-8.3-8 11.5-1.6z" fill="#1EC8FF"/>
+<path d="M342 120l4 8.4 9.2 1.3-6.6 6.4 1.6 9.1-8.2-4.3-8.2 4.3 1.6-9.1-6.6-6.4 9.2-1.3z" fill="#FF2E93"/>
+<path d="M318 190l3 6.2 6.8 1-4.9 4.7 1.2 6.8-6.1-3.2-6.1 3.2 1.2-6.8-4.9-4.7 6.8-1z" fill="#fff" stroke="#FF2E93" stroke-width="1.5"/>
+<circle cx="260" cy="24" r="4" fill="#FF2E93"/><circle cx="40" cy="220" r="3.5" fill="#1EC8FF"/></svg>
+</div></header>
+
+<main>
+<section class="sec" id="about"><div class="wrap">
+ <div class="sec-head reveal"><span class="sticker">축제 소개</span><h2>모두가 <span class="grad">주인공</span>인 하루</h2></div>
+ <div class="grid g4"><article class="card glass reveal tilt0"><div class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M9 21h6"/></svg></div><h3>무대 위 주인공은 우리 모두</h3><p>공연하는 사람도, 응원하는 사람도 모두 축제를 함께 만들어요.</p></article><article class="card glass reveal tilt1"><div class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18c1.2 0 1.8-.8 1.8-1.8 0-1.4-1-1.6-1-2.6 0-.9.7-1.6 1.6-1.6H17a4 4 0 0 0 4-4c0-4.4-4-8-9-8z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10.5" cy="7" r="1"/><circle cx="15" cy="7.5" r="1"/></svg></div><h3>동아리·학급의 1년을 한자리에</h3><p>공연과 체험 부스, 전시에서 1년 동안 준비한 것을 보여 줘요.</p></article><article class="card glass reveal tilt2"><div class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v5c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-3z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></div><h3>안전하고 모두가 즐거운 축제</h3><p>끝나기 전에 정리와 안전점검까지 마쳐서 모두가 안심하고 즐길 수 있게 해요.</p></article><article class="card glass reveal tilt0"><div class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M16 4.5a3.5 3.5 0 0 1 0 7M18 14c2 .7 3 2.8 3 6"/></svg></div><h3>재학생·교직원·학부모가 함께</h3><p>재학생 859명(2024년 기준)과 교직원·학부모까지 약 1,000명이 함께하는 하루예요. <span class="need">[가정: 총 약 1,000명]</span></p></article></div>
+</div></section>
+
+<section class="sec" id="program"><div class="wrap">
+ <div class="sec-head reveal"><span class="sticker s2">프로그램</span><h2>다섯 가지 즐길 거리</h2><p>프로그램 구성은 <span class="need">[가정]</span>이에요.</p></div>
+ <div class="grid g5"><article class="card glass reveal tilt0"><div class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M9 21h6"/></svg></div><h3>개막 무대 & 동아리 공연</h3><p>댄스·밴드·합창</p><span class="chip ">체육관</span></article><article class="card glass reveal tilt1"><div class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/><path d="M9 18V5l12-2v13M9 9l12-2"/></svg></div><h3>옥련 가요제·장기자랑 경연</h3><p>노래와 장기를 겨루는 경연</p><span class="chip c2">체육관</span></article><article class="card glass reveal tilt2"><div class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20L12 4l9 16H3zM12 4l-2.5 16M12 4l2.5 16"/></svg></div><h3>학급·동아리 체험 부스</h3><p>먹거리·게임·포토존</p><span class="chip ">교실·운동장</span></article><article class="card glass reveal tilt0"><div class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18c1.2 0 1.8-.8 1.8-1.8 0-1.4-1-1.6-1-2.6 0-.9.7-1.6 1.6-1.6H17a4 4 0 0 0 4-4c0-4.4-4-8-9-8z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10.5" cy="7" r="1"/><circle cx="15" cy="7.5" r="1"/></svg></div><h3>연정갤러리 전시</h3><p>미술·사진·학술 결과물</p><span class="chip c2">연정갤러리</span></article><article class="card glass reveal tilt1"><div class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10v5a5 5 0 0 1-10 0V4zM7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3M12 14v4M8 21h8M9 18h6"/></svg></div><h3>폐막 시상식 & 레크리에이션</h3><p>시상과 함께 즐기는 마무리</p><span class="chip "><span class="need">[확인 필요]</span></span></article></div>
+</div></section>
+
+<section class="sec" id="schedule"><div class="wrap">
+ <div class="sec-head reveal"><span class="sticker">일정·시상</span><h2>축제 당일 <span class="grad">타임라인</span></h2><p>일시 <span class="need">[확인 필요]</span> · 시간표 <span class="need">[가정]</span></p></div>
+ <div class="grid g2">
+  <div class="timeline glass reveal"><h3>당일 시간표</h3><ol class="tl"><li class=""><span class="dot" aria-hidden="true"></span><time>08:40</time><span>등교·준비</span></li><li class="hot"><span class="dot" aria-hidden="true"></span><time>09:30</time><span>개막식</span></li><li class=""><span class="dot" aria-hidden="true"></span><time>10:00</time><span>동아리 공연</span></li><li class=""><span class="dot" aria-hidden="true"></span><time>11:30</time><span>부스·전시 1부</span></li><li class=""><span class="dot" aria-hidden="true"></span><time>12:30</time><span>점심</span></li><li class=""><span class="dot" aria-hidden="true"></span><time>13:30</time><span>부스·전시 2부</span></li><li class="hot"><span class="dot" aria-hidden="true"></span><time>14:30</time><span>가요제·장기자랑</span></li><li class="hot"><span class="dot" aria-hidden="true"></span><time>16:00</time><span>시상·폐막</span></li><li class=""><span class="dot" aria-hidden="true"></span><time>16:30</time><span>정리·안전점검</span></li></ol></div>
+  <div class="side glass reveal"><h3>준비 일정 <span class="need">[가정]</span></h3>
+   <ol class="steps"><li><b>D-21</b>참가 신청</li><li><b>D-14</b>오디션 진행, 참가 부스 확정</li><li><b>D-7</b>리허설</li></ol>
+   <h3 style="margin-top:24px">부스 지원금</h3>
+   <p style="font-weight:700">부스당 <span style="color:var(--sm);font-size:1.4rem;font-weight:900">30,000원</span><br>32개 부스 지원 예정 <span class="need">[가정]</span></p>
+  </div>
+ </div>
+ <div class="awards">
+  <div class="aw glass reveal"><div class="num">100,000<small>원</small></div><p>가요제·장기자랑 대상</p><span>1팀 · 문화상품권</span></div>
+  <div class="aw glass reveal"><div class="num">50,000<small>원</small></div><p>최우수</p><span>2팀 · 각 50,000원</span></div>
+  <div class="aw glass reveal"><div class="num">30,000<small>원</small></div><p>우수</p><span>3팀 · 각 30,000원</span></div>
+  <div class="aw glass reveal"><div class="num">30,000<small>원</small></div><p>우수 부스상</p><span>5곳 · 각 30,000원</span></div>
+ </div>
+ <p style="margin-top:14px;color:var(--muted);font-weight:600">시상 내역 <span class="need">[가정]</span> · 심사 기준과 심사위원 <span class="need">[확인 필요]</span></p>
+</div></section>
+
+<section class="sec" id="faq"><div class="wrap">
+ <div class="sec-head reveal"><span class="sticker s2">FAQ</span><h2>자주 묻는 질문</h2></div>
+ <div class="faq reveal"><div class="faq-item glass"><h3><button type="button" aria-expanded="false" aria-controls="faq0" id="faqb0">Q1. 누가 참가 신청을 할 수 있나요?<span class="pm" aria-hidden="true"></span></button></h3><div class="faq-a" id="faq0" role="region" aria-labelledby="faqb0" hidden><p>학급이나 동아리 대표가 학생자치회에 신청서를 내면 돼요. 개인이 직접 신청할 수 있는지는 <span class="need">[확인 필요]</span>예요.</p></div></div><div class="faq-item glass"><h3><button type="button" aria-expanded="false" aria-controls="faq1" id="faqb1">Q2. 신청 마감은 언제인가요?<span class="pm" aria-hidden="true"></span></button></h3><div class="faq-a" id="faq1" role="region" aria-labelledby="faqb1" hidden><p>축제 21일 전(D-21)까지 신청을 받아요. <span class="need">[가정]</span> 축제 날짜가 정해지지 않아서 정확한 마감일은 <span class="need">[확인 필요]</span>예요.</p></div></div><div class="faq-item glass"><h3><button type="button" aria-expanded="false" aria-controls="faq2" id="faqb2">Q3. 공연 신청하면 무대에 바로 설 수 있나요?<span class="pm" aria-hidden="true"></span></button></h3><div class="faq-a" id="faq2" role="region" aria-labelledby="faqb2" hidden><p>D-14에 오디션을 보고, 통과한 팀은 D-7 리허설에 참여해요. <span class="need">[가정]</span></p></div></div><div class="faq-item glass"><h3><button type="button" aria-expanded="false" aria-controls="faq3" id="faqb3">Q4. 부스 운영비 지원이 있나요?<span class="pm" aria-hidden="true"></span></button></h3><div class="faq-a" id="faq3" role="region" aria-labelledby="faqb3" hidden><p>부스당 30,000원을 지원할 예정이에요. 지원 대상은 32개 부스예요. <span class="need">[가정]</span> 먹거리 부스 운영 기준은 <span class="need">[확인 필요]</span>예요.</p></div></div><div class="faq-item glass"><h3><button type="button" aria-expanded="false" aria-controls="faq4" id="faqb4">Q5. 학부모나 외부 손님도 올 수 있나요?<span class="pm" aria-hidden="true"></span></button></h3><div class="faq-a" id="faq4" role="region" aria-labelledby="faqb4" hidden><p>재학생과 교직원·학부모를 대상으로 해요. 입장 방법과 그 밖의 외부인 입장 여부는 <span class="need">[확인 필요]</span>예요.</p></div></div></div>
+</div></section>
+
+<section class="sec" id="apply"><div class="wrap">
+ <div class="sec-head reveal"><span class="sticker">참가 신청</span><h2>함께 <span class="grad">피워</span> 봐요</h2></div>
+ <form class="form glass reveal" id="applyForm" novalidate>
+  <p class="notice">공연이나 부스로 참가하려면 학급·동아리 대표가 신청해 주세요. 신청은 D-21까지예요. <span class="need">[가정]</span> 실제 신청서 제출 방법과 링크는 <span class="need">[확인 필요]</span>예요.<br>※ 이 폼은 데모용이라 입력한 내용이 저장되지 않아요.</p>
+  <div class="fields">
+   <div class="f"><label for="type">참가 유형 <i>*</i></label><select id="type" name="type" required><option value="">선택해 주세요</option><option>공연(동아리 공연)</option><option>가요제·장기자랑</option><option>체험 부스</option><option>전시</option></select></div>
+   <div class="f"><label for="team">학급 또는 동아리명 <i>*</i></label><input id="team" name="team" required></div>
+   <div class="f"><label for="leader">대표자 이름·학번 <i>*</i></label><input id="leader" name="leader" required></div>
+   <div class="f"><label for="count">참가 인원 <i>*</i></label><input id="count" name="count" type="number" min="1" required></div>
+   <div class="f full"><label for="desc">공연 종목 또는 부스·전시 내용 한 줄 소개 <i>*</i></label><input id="desc" name="desc" required></div>
+  </div>
+  <button class="btn" type="submit">참가 신청하기</button>
+  <div class="done" id="done" role="status" aria-live="polite" hidden></div>
+ </form>
+</div></section>
+</main>
+
+<footer class="foot"><div class="wrap"><div class="glass">
+ <span><b>주최</b>옥련여자고등학교</span><span><b>주관</b>제23대 학생자치회·축제준비위원회</span>
+ <span><b>장소</b>옥련여자고등학교 (인천광역시 연수구 옥골로 77)</span><span><b>문의</b>학생자치회·담당 교사 <span class="need">[연락처 확인 필요]</span></span>
+</div></div></footer>
+
+<script>
+(function(){
+  // FAQ toggle
+  document.querySelectorAll('.faq-item button').forEach(function(b){
+    b.addEventListener('click',function(){
+      var open=b.getAttribute('aria-expanded')==='true';
+      b.setAttribute('aria-expanded',String(!open));
+      document.getElementById(b.getAttribute('aria-controls')).hidden=open;
+    });
+  });
+  // reveal on scroll
+  var els=document.querySelectorAll('.reveal');
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce||!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});}
+  else{var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12});
+    els.forEach(function(e){io.observe(e);});}
+  // demo form: no sending, no storing
+  var f=document.getElementById('applyForm'),done=document.getElementById('done');
+  f.addEventListener('submit',function(ev){
+    ev.preventDefault();
+    if(!f.checkValidity()){f.reportValidity();return;}
+    done.textContent='신청이 접수되었습니다(데모)';
+    done.hidden=false;
+    f.reset();
+  });
+})();
+</script>
+</body>
+</html>
